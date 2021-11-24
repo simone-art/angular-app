@@ -1,0 +1,7 @@
+header.container{
+  width: 30px;
+}
+
+header.container.logo{
+  width: 10px;
+}
