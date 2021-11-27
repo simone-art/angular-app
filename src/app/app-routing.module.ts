@@ -1,9 +1,9 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { PostViewComponent } from './post-view/post-view.component';
 import { PortifolioComponent } from './portifolio/portifolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PostListComponent } from './post-list/post-list.component';
 
