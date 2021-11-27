@@ -10,11 +10,11 @@ import { PostListComponent } from './post-list/post-list.component';
 
 const routes: Routes = [
   {path: 'not-found', component: NotFoundComponent},
-  { path: 'posts', component: PostListComponent},
-  { path: 'post/:id', component: PostViewComponent},
-  { path: 'sobre-mim', component: AboutComponent},
-  { path: 'contato', component: ContactComponent},
-  { path: 'portifolio', component: PortifolioComponent},
+  {path: 'posts', component: PostListComponent},
+  {path: 'post/:id', component: PostViewComponent},
+  {path: 'sobre-mim', component: AboutComponent},
+  {path: 'contato', component: ContactComponent},
+  {path: 'portifolio', component: PortifolioComponent},
   {path: '', redirectTo: '/posts', pathMatch: 'full'},
   {path: '**', redirectTo: '/not-found', pathMatch: 'full'}
 ];
