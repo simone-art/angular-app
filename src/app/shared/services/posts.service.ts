@@ -31,10 +31,12 @@ export class PostsService {
 
   constructor() { }
 
+  //Obtendo os post
   getPosts(): Post[] {
     return this.posts;
   }
 
+  //Obtendo os post pelo id
   getPostById(postId: string | null): Post | undefined{
     return this.posts.find(post => post.id === postId);
   }
