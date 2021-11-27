@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Post } from '../shared/interface/post.interface';
+import { PostsService } from '../shared/services/posts.service';
 
 @Component({
   selector: 'app-post-view',
@@ -7,7 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostViewComponent implements OnInit {
 
-  constructor() { }
+  postId: string | null;
+  post: Post | undefined;
+
+  constructor(route: ActivatedRoute, postService: PostsService) {
+    this.postId = route.snapshot.paramMap.get('id');
+
+    this.post = postService.getPostById(this.postId)
+  }
 
   ngOnInit(): void {
   }
