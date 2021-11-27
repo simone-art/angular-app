@@ -8,6 +8,9 @@ import { PostViewComponent } from './post-view/post-view.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { NavComponent } from './core/layout/nav/nav.component';
 import { HeaderComponent } from './core/layout/header/header.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { PortifolioComponent } from './portifolio/portifolio.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HeaderComponent } from './core/layout/header/header.component';
     PostViewComponent,
     FooterComponent,
     NavComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent,
+    ContactComponent,
+    PortifolioComponent
   ],
   imports: [
     BrowserModule,
