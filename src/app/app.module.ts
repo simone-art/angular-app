@@ -1,3 +1,4 @@
+import { CommentsModule } from './post-view/comments/comments.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -32,7 +33,8 @@ import { SharedComponent } from './shared/shared.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

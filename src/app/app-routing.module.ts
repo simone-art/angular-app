@@ -1,3 +1,4 @@
+import { CommentsComponent } from './post-view/comments/comments.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PostViewComponent } from './post-view/post-view.component';
@@ -12,6 +13,8 @@ const routes: Routes = [
   {path: 'not-found', component: NotFoundComponent},
   {path: 'posts', component: PostListComponent},
   {path: 'post/:id', component: PostViewComponent},
+  {children: [{path: 'comentarios', component: CommentsComponent}]
+  },
   {path: 'sobre-mim', component: AboutComponent},
   {path: 'contato', component: ContactComponent},
   {path: 'portifolio', component: PortifolioComponent},
