@@ -150,4 +150,5 @@
       </div>
     </div>
   </div>
-  <button>Carregar comentários</button>
+  <router-outlet name="comments-outlet"></router-outlet>
+  <button [routerLink]="['/comentarios']" >Carregar comentários</button>
