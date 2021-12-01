@@ -1,6 +1,6 @@
+import { PostsService } from './../shared/services/posts.service';
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../shared/interface/post.interface';
-import { PostsService } from '../shared/services/posts.service';
 
 @Component({
   selector: 'app-post-list',
@@ -8,7 +8,6 @@ import { PostsService } from '../shared/services/posts.service';
   styleUrls: ['./post-list.component.css']
 })
 export class PostListComponent implements OnInit {
-
   posts: Post[];
   showPosts: boolean;
 
@@ -17,8 +16,6 @@ export class PostListComponent implements OnInit {
     this.showPosts = true;
     this.posts = postService.getPosts();
   }
-
-
 
   ngOnInit(): void {
   }
