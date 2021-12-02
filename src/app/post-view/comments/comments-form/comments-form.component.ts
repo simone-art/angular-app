@@ -21,7 +21,7 @@ export class CommentsFormComponent implements OnInit {
   }
 
   sendForm(){
-    console.log(this.commentForm)
+    console.log(this.commentForm.value.commentTxt)
   }
 
 }

@@ -17,7 +17,7 @@
   <div
   *ngIf="commentForm.controls['commentTxt'].errors?.['minlength'] && (commentForm.controls['commentTxt'].dirty || commentForm.controls['commentTxt'].touched)"
 >
-  O campo comentario precisa ter no minimo 10 caqracteres
+  O campo comentario precisa ter no minimo 10 caracteres
 </div>
-  <button type="submit" [disabled]="!commentForm.valid">Submit</button>
+  <button type="submit" [disabled]="!commentForm.valid">Enviar</button>
 </form>
